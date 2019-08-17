@@ -132,7 +132,7 @@ We will preprocess the data by changing the date time formats as required and tr
 We split the data into train (70%) and test(20%). We include regularization technique and use grid search to find best polynomial order and alpha coefficient of ridge regression.
 The grid search result were as below:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Grid search.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Grid_search.png)
 
 
 ## IV. Results
@@ -142,7 +142,7 @@ The grid search result were as below:
 
 The below table gives the MSE value obtained for used models
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/MSE values.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/MSE_values.png)
 
 The Polynomial regression model is better than Linear regression  with MSE ~74. Later we tried it for Light GBM which gave us an MSE value of ~87
 
