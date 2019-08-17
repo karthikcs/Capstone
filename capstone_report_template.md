@@ -4,7 +4,6 @@ Srividya
 August 17th, 2019
 
 ## I. Definition
-_(approx. 1-2 pages)_
 
 ### Project Overview
 The commutes through flights have helped us to overcome the barrier of geography.They have become very
@@ -35,7 +34,7 @@ good journey and airlines to become more efficient. We can predict these delays 
 
 As our problem is based on prediction its a regression problem and large differences between actual and predicted are punished more in MSE than in MAE. Therefore we have taken MSE as our evaluation metric. As we have tried different models including benchmark model which is linear regression they all should have common evaluation metrics so that we can compare which is the better model. For this purpose we are using MSE as a common metric. MSE is given by:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/MSE2.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/MSE2.png)
 
 MSE basically measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
 
@@ -63,13 +62,13 @@ For easy computations I will be taking subset of this data which is of one month
 Next I will clean the data by changing the date time format of time variables for convenience. Also as there are few missing values but very less. I remove them and remove all NANs. 
 The statistics of the the delay grouped by each airline is as follows: 
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Get_stats1.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Get_stats1.png)
 
 ### Exploratory Visualization
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Pie delays.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Pie_delays.png)
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Delay dispersion.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Delay_dispersion.png)
 
 Considering the first pie chart that gives the percentage of flights per airline, we see that there is some disparity between the carriers. For exemple, *Southwest Airlines* accounts for ~20% of the flights which is similar to the number of flights chartered by the 7 tiniest airlines. However, if we have a look at the second pie chart, we see that here, on the contrary, the differences among airlines are less pronounced. Excluding *Hawaiian Airlines* and *Alaska Airlines* that report extremely low mean delays, we obtain that a value of 11+or-7 minutes would correctly represent all mean delays. Note that this value is quite low which mean that the standard for every airline is to respect the schedule !
 
