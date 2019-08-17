@@ -1,30 +1,45 @@
 # Machine Learning Engineer Nanodegree
-## Capstone Project
-Joe Udacity  
-December 31st, 2050
+## Predicting flight delays
+Srividya  
+August 17th, 2019
 
 ## I. Definition
 _(approx. 1-2 pages)_
 
 ### Project Overview
-In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
-- _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_
-- _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_
+The commutes through flights have helped us to overcome the barrier of geography.They have become very
+common among the individuals, might be a trip or a business meeting. As the number of people who travel
+have increased, the number of airlines and airports have also increased to make a passenger's life much
+easier. The sizes of the airports differs from one to another based on the population of the passengers and
+number of incoming and outgoing flights in the airports. There are different types of flights, in this problem we
+mainly focus on domestic flights. There are nearly 44K aircrafts that lands daily on average in US and 87K
+flights that crisscross US everyday on avg. From this we can infer that the Air traffic is huge and there will be
+delays in takeoffs and landings. The delay in flight is very painful for passengers and airlines. This could lead
+to very serious problem such as missing important business meetings or a sport competition etc which might
+lead to huge losses. This mainly creates stressful situations among the passengers. There are cases where
+passengers have missed connecting flights and have waited double the time than they expected.
+Due to this problem it has become very important that passengers are well informed in advance so that they
+can plan their trip accordingly. If we have data on flights arrival and departure timings of its everyday trip we
+can capture the pattern of these delays and predict them accordingly based on the data(history) that we have.
+This is the main role of our project.
 
 ### Problem Statement
-In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
-- _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_
-- _Have you thoroughly discussed how you will attempt to solve the problem?_
-- _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_
+Booking flights online have become very common through websites. There are tons of websites that do flight
+bookings, they provide details such as arrival, departure time, fare etc. But what if they provide details on the
+delays? This will help users or passengers to decide or plan on their trip upfront. The overhead of delays or
+surprise delays will be reduced to some extent.
+This prediction also helps airlines to avoid delays through planning and thus help both passengers to have a
+good journey and airlines to become more efficient. We can predict these delays using regression models.
 
 ### Metrics
-In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project. These calculations and metrics should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:
-- _Are the metrics you’ve chosen to measure the performance of your models clearly discussed and defined?_
-- _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_
 
+As our problem is based on prediction its a regression problem and large differences between actual and predicted are punished more in MSE than in MAE. Therefore we have taken MSE as our evaluation metric. As we have tried different models including benchmark model which is linear regression they all should have common evaluation metrics so that we can compare which is the better model. For this purpose we are using MSE as a common metric. MSE is given by:
+![alt text](https://raw.githubusercontent.com/Srividya129/Capstone/MSE2.png)
+MSE basically measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
+
+The higher this value, the worse the model is. It is never negative, since we’re squaring the individual prediction-wise errors before summing them, but would be zero for a perfect model .
 
 ## II. Analysis
-_(approx. 2-4 pages)_
 
 ### Data Exploration
 In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
