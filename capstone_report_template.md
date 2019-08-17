@@ -63,12 +63,13 @@ For easy computations I will be taking subset of this data which is of one month
 Next I will clean the data by changing the date time format of time variables for convenience. Also as there are few missing values but very less. I remove them and remove all NANs. 
 The statistics of the the delay grouped by each airline is as follows: 
 
-<<<<IMG GET stats1.png>>>
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Get_stats1.png)
 
 ### Exploratory Visualization
 
-<<IMG pie chart>>>>
-<<IMG delay dispersion>>
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Pie delays.png)
+
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Delay dispersion.png)
 
 Considering the first pie chart that gives the percentage of flights per airline, we see that there is some disparity between the carriers. For exemple, *Southwest Airlines* accounts for ~20% of the flights which is similar to the number of flights chartered by the 7 tiniest airlines. However, if we have a look at the second pie chart, we see that here, on the contrary, the differences among airlines are less pronounced. Excluding *Hawaiian Airlines* and *Alaska Airlines* that report extremely low mean delays, we obtain that a value of 11+or-7 minutes would correctly represent all mean delays. Note that this value is quite low which mean that the standard for every airline is to respect the schedule !
 
@@ -77,15 +78,16 @@ Finally, the figure at the bottom makes a census of all the delays that were mea
 The large majority of short delays is visible in the next figure:
 
 
-<<Img short and large delays>>
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Short large delays.png)
 
 
 This figure gives a count of the delays of less than 5 minutes, those in the range 5 < t < 45 min and finally, the delays greater than 45 minutes. Hence, we wee that independently of the airline, delays greater than 45 minutes only account for a few percents. However, the proportion of delays in these three groups depends on the airline: as an exemple, in the case of 
 *SkyWest Airlines*, the delays greater than 45 minutes are only lower by ~30% with respect to delays in the range 5 < t < 45 min. Things are better for *SoutWest Airlines*  since delays greater than 45 minutes are 4 times less frequent than delays in the range 5 < t < 45 min.
 
-
 Number of airports visited by each airline:
-<<IMG number of airports visited by each airline>>
+
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Number of airports visited.png)
+
 
 ### Algorithms and Techniques
 Here we are using the following models:
@@ -124,7 +126,7 @@ In modelling we split the data into train and test. Also we have considered cros
 
 Here are the following steps that were followed while solving this problem:
 
-<<IMG Implementation>>
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Implementation.png)
 
 ### Refinement
 
@@ -132,7 +134,7 @@ We will preprocess the data by changing the date time formats as required and tr
 We split the data into train (70%) and test(20%). We include regularization technique and use grid search to find best polynomial order and alpha coefficient of ridge regression.
 The grid search result were as below:
 
-<<IMG grid search>>>
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Grid search.png)
 
 
 ## IV. Results
@@ -141,7 +143,9 @@ The grid search result were as below:
 ### Model Evaluation and Validation
 
 The below table gives the MSE value obtained for used models
-<<MSE Values>>
+
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/MSE values.png)
+
 The Polynomial regression model is better than Linear regression  with MSE ~74. Later we tried it for Light GBM which gave us an MSE value of ~87
 
 ### Justification
@@ -151,26 +155,20 @@ There could be improvements made on the LightGBM as well by tuning their paramet
 
 
 ## V. Conclusion
-_(approx. 1-2 pages)_
 
 ### Free-Form Visualization
-In this section, you will need to provide some form of visualization that emphasizes an important quality about the project. It is much more free-form, but should reasonably support a significant result or characteristic about the problem that you want to discuss. Questions to ask yourself when writing this section:
-- _Have you visualized a relevant or important quality about the problem, dataset, input data, or results?_
-- _Is the visualization thoroughly analyzed and discussed?_
-- _If a plot is provided, are the axes, title, and datum clearly defined?_
+Impact of origin airport on delays:
+
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Final.png)
 
 ### Reflection
-In this section, you will summarize the entire end-to-end problem solution and discuss one or two particular aspects of the project you found interesting or difficult. You are expected to reflect on the project as a whole to show that you have a firm understanding of the entire process employed in your work. Questions to ask yourself when writing this section:
-- _Have you thoroughly summarized the entire process you used for this project?_
-- _Were there any interesting aspects of the project?_
-- _Were there any difficult aspects of the project?_
-- _Does the final model and solution fit your expectations for the problem, and should it be used in a general setting to solve these types of problems?_
+
+We started of with basic linear regression and moved to polynomial regression with regularization. Later we have also used Grid search for this model. We have also used a lightGBM model traditional gradient boost. 
+The most time consuming part was data preprocessing. The cleansing and conversion of date formats to date time format. Next it was a bit tricky in regularization part and their parameter tuning. LightGBM model was a new learning and have made things easier. 
 
 ### Improvement
-In this section, you will need to provide discussion as to how one aspect of the implementation you designed could be improved. As an example, consider ways your implementation can be made more general, and what would need to be modified. You do not need to make this improvement, but the potential solutions resulting from these changes are considered and compared/contrasted to your current solution. Questions to ask yourself when writing this section:
-- _Are there further improvements that could be made on the algorithms or techniques you used in this project?_
-- _Were there algorithms or techniques you researched that you did not know how to implement, but would consider using if you knew how?_
-- _If you used your final solution as the new benchmark, do you think an even better solution exists?_
+
+We can consider tree based ensembled method for better results. Also we can make improvements in lightGBM model and explore more regression trees. We can use the current LightGBM as bench mark or Polynomial regression and use the above mentioned models as improvements.
 
 -----------
 
