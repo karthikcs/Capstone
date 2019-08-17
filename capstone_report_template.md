@@ -35,7 +35,7 @@ good journey and airlines to become more efficient. We can predict these delays 
 
 As our problem is based on prediction its a regression problem and large differences between actual and predicted are punished more in MSE than in MAE. Therefore we have taken MSE as our evaluation metric. As we have tried different models including benchmark model which is linear regression they all should have common evaluation metrics so that we can compare which is the better model. For this purpose we are using MSE as a common metric. MSE is given by:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/MSE2.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/MSE2.png)
 
 MSE basically measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
 
@@ -63,13 +63,13 @@ For easy computations I will be taking subset of this data which is of one month
 Next I will clean the data by changing the date time format of time variables for convenience. Also as there are few missing values but very less. I remove them and remove all NANs. 
 The statistics of the the delay grouped by each airline is as follows: 
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Get_stats1.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Get_stats1.png)
 
 ### Exploratory Visualization
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Pie delays.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Pie delays.png)
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Delay dispersion.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Delay dispersion.png)
 
 Considering the first pie chart that gives the percentage of flights per airline, we see that there is some disparity between the carriers. For exemple, *Southwest Airlines* accounts for ~20% of the flights which is similar to the number of flights chartered by the 7 tiniest airlines. However, if we have a look at the second pie chart, we see that here, on the contrary, the differences among airlines are less pronounced. Excluding *Hawaiian Airlines* and *Alaska Airlines* that report extremely low mean delays, we obtain that a value of 11+or-7 minutes would correctly represent all mean delays. Note that this value is quite low which mean that the standard for every airline is to respect the schedule !
 
@@ -78,7 +78,7 @@ Finally, the figure at the bottom makes a census of all the delays that were mea
 The large majority of short delays is visible in the next figure:
 
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Short large delays.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Short large delays.png)
 
 
 This figure gives a count of the delays of less than 5 minutes, those in the range 5 < t < 45 min and finally, the delays greater than 45 minutes. Hence, we wee that independently of the airline, delays greater than 45 minutes only account for a few percents. However, the proportion of delays in these three groups depends on the airline: as an exemple, in the case of 
@@ -86,7 +86,7 @@ This figure gives a count of the delays of less than 5 minutes, those in the ran
 
 Number of airports visited by each airline:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Number of airports visited.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Number of airports visited.png)
 
 
 ### Algorithms and Techniques
@@ -126,7 +126,7 @@ In modelling we split the data into train and test. Also we have considered cros
 
 Here are the following steps that were followed while solving this problem:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Implementation.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Implementation.png)
 
 ### Refinement
 
@@ -134,7 +134,7 @@ We will preprocess the data by changing the date time formats as required and tr
 We split the data into train (70%) and test(20%). We include regularization technique and use grid search to find best polynomial order and alpha coefficient of ridge regression.
 The grid search result were as below:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Grid search.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Grid search.png)
 
 
 ## IV. Results
@@ -144,7 +144,7 @@ The grid search result were as below:
 
 The below table gives the MSE value obtained for used models
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/MSE values.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/MSE values.png)
 
 The Polynomial regression model is better than Linear regression  with MSE ~74. Later we tried it for Light GBM which gave us an MSE value of ~87
 
@@ -159,7 +159,7 @@ There could be improvements made on the LightGBM as well by tuning their paramet
 ### Free-Form Visualization
 Impact of origin airport on delays:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Final.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Final.png)
 
 ### Reflection
 
