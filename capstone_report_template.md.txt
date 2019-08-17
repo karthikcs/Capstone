@@ -34,7 +34,9 @@ good journey and airlines to become more efficient. We can predict these delays 
 ### Metrics
 
 As our problem is based on prediction its a regression problem and large differences between actual and predicted are punished more in MSE than in MAE. Therefore we have taken MSE as our evaluation metric. As we have tried different models including benchmark model which is linear regression they all should have common evaluation metrics so that we can compare which is the better model. For this purpose we are using MSE as a common metric. MSE is given by:
+
 ![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/MSE2.png)
+
 MSE basically measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
 
 The higher this value, the worse the model is. It is never negative, since we’re squaring the individual prediction-wise errors before summing them, but would be zero for a perfect model .
