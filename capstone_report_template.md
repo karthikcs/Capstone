@@ -70,7 +70,7 @@ The statistics of the the delay grouped by each airline is as follows:
 
 ![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Delay_dispersion.png)
 
-Considering the first pie chart that gives the percentage of flights per airline, we see that there is some disparity between the carriers. For exemple, *Southwest Airlines* accounts for ~20% of the flights which is similar to the number of flights chartered by the 7 tiniest airlines. However, if we have a look at the second pie chart, we see that here, on the contrary, the differences among airlines are less pronounced. Excluding *Hawaiian Airlines* and *Alaska Airlines* that report extremely low mean delays, we obtain that a value of 11+or-7 minutes would correctly represent all mean delays. Note that this value is quite low which mean that the standard for every airline is to respect the schedule !
+Considering the first pie chart that gives the percentage of flights per airline, we see that there is some disparity between the carriers. For exemple, *Southwest Airlines* accounts for ~20% of the flights which is similar to the number of flights chartered by the 7 tiniest airlines. However, if we have a look at the second pie chart, we see that here, on the contrary, the differences among airlines are less pronounced. Excluding *Hawaiian Airlines* and *Alaska Airlines* that report extremely low mean delays, we obtain that a value of 11+or-7 minutes would correctly represent all mean delays.
 
 Finally, the figure at the bottom makes a census of all the delays that were measured in January 2015. This representation gives a feeling on the dispersion of data and put in perspective the relative homogeneity that appeared in the second pie chart. Indeed, we see that while all mean delays are around 10 minutes, this low value is a consequence of the fact that a majority of flights take off on time. However, we see that occasionally, we can face really large delays that can reach a few tens of hours !
 
@@ -85,7 +85,7 @@ This figure gives a count of the delays of less than 5 minutes, those in the ran
 
 Number of airports visited by each airline:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Number_of_airports_visited.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Number_of%20airports_visited.png)
 
 
 ### Algorithms and Techniques
