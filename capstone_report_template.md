@@ -151,13 +151,17 @@ The Polynomial regression model is better than Linear regression  with MSE ~74. 
 As the above figure gives the MSE value for each model, we can see that Polynomial regression is performing better than both the benchmark model and LightGBM model. This is due to the use of regulrization with parameter tuning. 
 There could be improvements made on the LightGBM as well by tuning their parameters but as we can see the params of LightGBM are very large and would take time for its tuning. This becomes a new project in itself. 
 
-
+er
 ## V. Conclusion
 
 ### Free-Form Visualization
 Impact of origin airport on delays:
 
 ![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Final.png)
+
+This figure allows to draw some conclusions. First, by looking at the data associated with the different airlines, we find the behavior we previously observed: for example, if we consider the right panel, it will be seen that the column associated with  *American Eagle Airlines* mostly reports large delays, while the column associated with *Delta Airlines* is mainly associated  with delays of less than 5 minutes. If we now look at the airports of origin, we will see that some airports favor late departures: see e.g. Denver, Chicago or New York. Conversely, other airports will mainly know on time departures such as Portland or Oakland.
+
+Finally, we can deduce from these observations that there is a high variability in average delays, both between the different airports but also between the different airlines. This is important because it implies that in order to accurately model the delays, it will be necessary to adopt a model that is ** specific to the company and the home airport. This was very interesting analysis.
 
 ### Reflection
 
