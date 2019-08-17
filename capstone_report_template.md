@@ -77,7 +77,7 @@ Finally, the figure at the bottom makes a census of all the delays that were mea
 The large majority of short delays is visible in the next figure:
 
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Short large delays.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Short_large_delays.png)
 
 
 This figure gives a count of the delays of less than 5 minutes, those in the range 5 < t < 45 min and finally, the delays greater than 45 minutes. Hence, we wee that independently of the airline, delays greater than 45 minutes only account for a few percents. However, the proportion of delays in these three groups depends on the airline: as an exemple, in the case of 
@@ -85,7 +85,7 @@ This figure gives a count of the delays of less than 5 minutes, those in the ran
 
 Number of airports visited by each airline:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Number of airports visited.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Number_of_airports_visited.png)
 
 
 ### Algorithms and Techniques
@@ -113,7 +113,6 @@ source airport, airline, time of departure etc m = set of coefficients of differ
 interecept
 
 ## III. Methodology
-_(approx. 3-5 pages)_
 
 ### Data Preprocessing
 We have few data processing steps such as changing the format of Scheduled departure(Date_time), Scheduled arrival(time) and Arrival time(time) and departure time(time) to the formats specified in brackets. Scheduled departure was in float type.
@@ -125,7 +124,7 @@ In modelling we split the data into train and test. Also we have considered cros
 
 Here are the following steps that were followed while solving this problem:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Implementation.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Implementation.png)
 
 ### Refinement
 
@@ -143,7 +142,7 @@ The grid search result were as below:
 
 The below table gives the MSE value obtained for used models
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/MSE values.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/MSE values.png)
 
 The Polynomial regression model is better than Linear regression  with MSE ~74. Later we tried it for Light GBM which gave us an MSE value of ~87
 
@@ -158,7 +157,7 @@ There could be improvements made on the LightGBM as well by tuning their paramet
 ### Free-Form Visualization
 Impact of origin airport on delays:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Final.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Final.png)
 
 ### Reflection
 
