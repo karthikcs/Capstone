@@ -132,7 +132,7 @@ We will preprocess the data by changing the date time formats as required and tr
 We split the data into train (70%) and test(20%). We include regularization technique and use grid search to find best polynomial order and alpha coefficient of ridge regression.
 The grid search result were as below:
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/Grid_search.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Grid_search.png)
 
 
 ## IV. Results
@@ -168,14 +168,4 @@ The most time consuming part was data preprocessing. The cleansing and conversio
 
 We can consider tree based ensembled method for better results. Also we can make improvements in lightGBM model and explore more regression trees. We can use the current LightGBM as bench mark or Polynomial regression and use the above mentioned models as improvements.
 
------------
 
-**Before submitting, ask yourself. . .**
-
-- Does the project report you’ve written follow a well-organized structure similar to that of the project template?
-- Is each section (particularly **Analysis** and **Methodology**) written in a clear, concise and specific fashion? Are there any ambiguous terms or phrases that need clarification?
-- Would the intended audience of your project be able to understand your analysis, methods, and results?
-- Have you properly proof-read your project report to assure there are minimal grammatical and spelling mistakes?
-- Are all the resources used for this project correctly cited and referenced?
-- Is the code that implements your solution easily readable and properly commented?
-- Does the code execute without error and produce results similar to those reported?
