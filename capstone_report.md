@@ -130,7 +130,7 @@ Here are the following steps that were followed while solving this problem:
 ### Refinement
 
 We will preprocess the data by changing the date time formats as required and treat missing values. 
-We split the data into train (70%) and test(20%). We include regularization technique and use grid search to find best polynomial order and alpha coefficient of ridge regression.
+We split the data into train (70%) and test(30%). We include regularization technique and use grid search to find best polynomial order and alpha coefficient of ridge regression.
 The grid search result were as below:
 
 ![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/Grid_search.png)
@@ -143,16 +143,15 @@ The grid search result were as below:
 
 The below table gives the MSE value obtained for used models
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/MSE_values.png)
+![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/MSE_values1.png)
 
-The Polynomial regression model is better than Linear regression  with MSE ~74. Later we tried it for Light GBM which gave us an MSE value of ~87
+The Polynomial regression model is better than Linear regression  with MSE ~74. Later I tried it for Light GBM which gave an MSE value of ~80
 
 ### Justification
 
 As the above figure gives the MSE value for each model, we can see that Polynomial regression is performing better than both the benchmark model and LightGBM model. This is due to the use of regulrization with parameter tuning. 
 There could be improvements made on the LightGBM as well by tuning their parameters but as we can see the params of LightGBM are very large and would take time for its tuning. This becomes a new project in itself. 
 
-er
 ## V. Conclusion
 
 ### Free-Form Visualization
