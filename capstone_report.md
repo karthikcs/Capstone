@@ -143,7 +143,7 @@ The grid search result were as below:
 
 The below table gives the MSE value obtained for used models
 
-![Drag Racing](https://raw.githubusercontent.com/srividya129/Capstone/master/MSE_values1.png)
+![Drag Racing](https://https://github.com/srividya129/Capstone/blob/master/MSE_values1.png)
 
 The Polynomial regression model is better than Linear regression  with MSE ~74. Later I tried it for Light GBM which gave an MSE value of ~80
 
